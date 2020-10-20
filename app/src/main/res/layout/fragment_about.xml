@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/White"
+    tools:context="fragment.AboutFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/purpose"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/purpose_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purpose"
+            android:text="@string/intro"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purpose_text"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="8dp"
+            android:text="@string/our_team"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="8dp"
+            android:text="@string/team"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/team"
+            android:layout_toEndOf="@+id/tv_text"
+            android:background="@drawable/my_photo" />
+    </RelativeLayout>
+</ScrollView>

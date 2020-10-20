@@ -1,0 +1,2 @@
+include ':javax.mail'
+include ':app'

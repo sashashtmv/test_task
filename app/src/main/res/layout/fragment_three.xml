@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ThreeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/three"
+        app:layout_constraintBottom_toTopOf="@id/tv_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="64dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:textColor="@color/priority_normal"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/text_description"
+        app:layout_constraintEnd_toStartOf="@id/vert_line" />
+
+    <View
+        android:id="@+id/vert_line"
+        android:layout_width="2dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/priority_normal"
+        app:layout_constraintBottom_toTopOf="@id/text_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="64dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/priority_normal"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/text_description"
+        app:layout_constraintStart_toEndOf="@id/vert_line" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:text="@string/weiting_goods"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_box"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/Black" />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/Black" />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="2dp"
+            android:background="@color/Black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:textColor="@color/priority_normal"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
